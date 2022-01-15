@@ -84,6 +84,9 @@ stat(const char *n, struct stat *st)
   return r;
 }
 
+
+// 比較char的ascii有沒有介於'0'~'9'
+// 有的話減去'0' (e.g., '1' = 49,  '0' = 48, 49-48=1)
 int
 atoi(const char *s)
 {
